@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+    <script src="../SimpleAngular/main.js"></script>
+      <title>Angular JS</title>
+  </head>
+
+  <body ng-app="app" ng-controller="mainController as main">
+
+
+    <div style="text-align:center">
+        <h1>Angular Example</h1>
+        <br>
+        {{main.counter}}
+        <br>
+        <button ng-click="main.counterFunction()">Add Counter</button>
+        <br>
+        {{main.input}}
+        <br>
+        <br>
+        <input ng-model="main.input" ></input>
+        <button ng-click="main.showInput()">Click me!</button>
+        <br>
+        {{main.input + " "  +main.counter }}
+
+    </div>
+
+
+  </body>
+
+
+</html>
